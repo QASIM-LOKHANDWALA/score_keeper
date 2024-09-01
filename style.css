@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #b7b7b7;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 65vw;
+  margin: 5vh auto;
+  padding: 2% 5%;
+  background-color: antiquewhite;
+  border-radius: 20px;
+  border: 2px solid rgb(125, 130, 225);
+}
+
+.brand {
+  text-align: center;
+  color: #333;
+  font-size: medium;
+  font-family: serif;
+  margin-bottom: 44px;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image img {
+  max-width: 40%;
+  margin-bottom: 44px;
+  transition: all 0.4s ease;
+}
+
+.image img:hover {
+  scale: 1.2;
+  transition: all 0.4s ease;
+}
+
+.scores {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 60px;
+}
+
+.selector {
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+
+.selector select {
+  border-radius: 100px;
+  padding: 2px;
+  font-size: 0.7rem;
+  background-color: rgba(125, 130, 225, 0.2);
+  color: #333;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  border-radius: 100px;
+  border: none;
+  background-color: #44e376;
+  padding: 12px 12px;
+}
+
+.btn:hover {
+  border-radius: 100px;
+  border: none;
+  background-color: #3ccd6a;
+  padding: 12px 12px;
+}
+
+.btn-reset {
+  background-color: rgb(241, 121, 77);
+}
+
+.btn-reset:hover {
+  background-color: rgb(245, 104, 52);
+}
+
+.winner {
+  color: green;
+}
+
+.looser {
+  color: red;
+}
+
+@media only screen and (max-width: 600px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+}
