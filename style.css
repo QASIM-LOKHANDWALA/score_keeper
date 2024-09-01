@@ -5,42 +5,57 @@
 }
 
 body {
-  background-color: #b7b7b7;
+  background-color: #fff;
   font-family: sans-serif;
 }
 
-.container {
-  width: 65vw;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
   margin: 5vh auto;
-  padding: 2% 5%;
-  background-color: antiquewhite;
+}
+
+.container {
+  color: #fff;
+  width: 40vw;
+  background-color: #333;
   border-radius: 20px;
-  border: 2px solid rgb(125, 130, 225);
+  border: 2px solid rgb(0, 0, 0);
+  overflow: hidden;
+}
+
+.content {
+  padding: 2% 5%;
 }
 
 .brand {
   text-align: center;
   color: #333;
-  font-size: medium;
-  font-family: serif;
-  margin-bottom: 44px;
+  font-size: 1.6rem;
+  font-weight: 800;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .image {
+  padding: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .image img {
-  max-width: 40%;
+  width: 100%;
   margin-bottom: 44px;
+  border-radius: 18px;
+  border: 2px solid #333;
   transition: all 0.4s ease;
 }
 
 .image img:hover {
-  scale: 1.2;
-  transition: all 0.4s ease;
+  scale: 1.04;
 }
 
 .scores {
@@ -50,6 +65,7 @@ body {
 }
 
 .selector {
+  text-align: center;
   margin-bottom: 15px;
   font-size: 0.9rem;
   text-transform: capitalize;
@@ -58,9 +74,9 @@ body {
 .selector select {
   border-radius: 100px;
   padding: 2px;
-  font-size: 0.7rem;
-  background-color: rgba(125, 130, 225, 0.2);
-  color: #333;
+  font-size: 0.9rem;
+  background-color: rgba(251, 251, 252, 0.6);
+  color: #000000;
 }
 
 .buttons {
@@ -71,21 +87,22 @@ body {
 }
 
 .btn {
-  border-radius: 100px;
+  border-radius: 10px;
   border: none;
   background-color: #44e376;
+  box-shadow: 0 0 8px #555;
   padding: 12px 12px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
 }
 
 .btn:hover {
-  border-radius: 100px;
-  border: none;
   background-color: #3ccd6a;
-  padding: 12px 12px;
 }
 
 .btn-reset {
   background-color: rgb(241, 121, 77);
+  box-shadow: 0 0 8px #555;
 }
 
 .btn-reset:hover {
@@ -104,5 +121,14 @@ body {
   .buttons {
     display: flex;
     flex-direction: column;
+  }
+
+  .container {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .image {
+    width: 100vw;
   }
 }
